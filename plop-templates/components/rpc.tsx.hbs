@@ -1,0 +1,33 @@
+/**
+*
+* {{ properCase name }}
+*
+*/
+
+{{#switch type}}
+  {{#case "preact"}}
+import { h, Component } from 'preact'
+  {{/case}}
+  {{#case "react"}}
+import React, { Component } from 'react'
+  {{/case}}
+{{/switch}}
+
+type State = {}
+
+type Props = {}
+
+export default class {{ properCase name }} extends React.PureComponent<Props, State> {
+
+  constructor (props) {
+    super (props)
+  }
+
+  render () {
+    return (
+      <div>
+
+      </div>
+    )
+  }
+}

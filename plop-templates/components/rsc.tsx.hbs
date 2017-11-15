@@ -1,0 +1,18 @@
+/**
+*
+* {{ properCase name }}
+*
+*/
+
+{{#switch type}}
+  {{#case "preact"}}
+import { h, Component } from 'preact'
+  {{/case}}
+  {{#case "react"}}
+import React, { Component } from 'react'
+  {{/case}}
+{{/switch}}
+
+const {{ properCase name }} = () => <div></div>
+
+export default {{ properCase name }}
